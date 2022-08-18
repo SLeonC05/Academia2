@@ -45,7 +45,7 @@
             <div class="form-group">
                 <label for="documento">Documento de identidad</label>
                 <br>
-                <input id="documento" type="file" name="documento">
+                <input id="documento" type="file" name="documento" accept="aplication/pdf">
             </div>
             <button class="btn btn-info" type="submit">Añadir Docente</button>
         </div>
