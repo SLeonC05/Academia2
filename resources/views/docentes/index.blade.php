@@ -4,6 +4,7 @@
 
 @section('contenido')
     <h2>Nuestros Docentes</h2>
+    <a href="/docentes/create" class="m-3 btn btn-success">Añadir docente nuevo</a>
     <div class="row">
         @foreach ($docentico as $item)
                 <div class="m-3 col-sm">
@@ -18,5 +19,4 @@
                 </div>{{--cierre de col--}}
         @endforeach
     </div>
-    <a href="/docentes/create" class="m-3 btn btn-success">Añadir docente nuevo</a>
 @endsection

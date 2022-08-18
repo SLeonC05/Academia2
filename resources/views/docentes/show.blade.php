@@ -14,6 +14,7 @@
             <img width="400" src="{{Storage::url($docentico->imagen)}}" alt="">
             <br>
             <br>
+            <p>Documento:</p>
             <iframe width="400" height="400" src="{{Storage::url($docentico->documento)}}"></iframe>
         </div>
         <br>

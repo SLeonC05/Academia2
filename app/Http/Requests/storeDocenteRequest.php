@@ -30,7 +30,7 @@ class storeDocenteRequest extends FormRequest
             'titulo'=>'required|max:50',
             'edad'=>'required|integer',
             'fecha'=>'required|date',
-            'imagen'=>'required|image',
+            'imagen'=>'image|max: 5000',
             'documento'=>'required|file'
         ];
     }
