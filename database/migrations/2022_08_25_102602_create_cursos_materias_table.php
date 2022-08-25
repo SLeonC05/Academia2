@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('cursos_materias', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->id('idCurso');
+            $table->id('idMateria');
         });
     }
 
