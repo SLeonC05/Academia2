@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Paises extends Model
 {
+    protected $fillable = ['nombrePais'];
     use HasFactory;
 }
