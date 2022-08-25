@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('municipios', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('nombreMunici');
+            $table->string('idDepartamento');
         });
     }
 
