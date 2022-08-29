@@ -13,16 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('estudiantes', function (Blueprint $table) {
+        Schema::create('estudiante', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->text('tipoDoc');
             $table->integer('numDoc');
             $table->string('docIdent');
-            $table->insignesBigInteger('idPaisExp');
-            $table->insignesBigInteger('idDepExp');
+            $table->unsignedBigInteger('idPaisExp');
+            $table->unsignedBigInteger('idDepExp');
             $table->date('fechaExp');
-            $table->unsignedBigInteger('idMuniciExp');
+            $table->unsignedBigInteger('idMuniExp');
             $table->text('nombres');
             $table->text('primerApellido');
             $table->text('segundoApellido');
@@ -51,6 +51,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('estudiantes');
+        Schema::dropIfExists('estudiante');
     }
 };
