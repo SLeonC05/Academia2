@@ -6,7 +6,7 @@
     <form action="/estudiantes" method="POST" enctype="multipart/form-data">
         @csrf
 
-        {{-- @if ($errors->any())
+        @if ($errors->any())
             @foreach ($errors->all() as $alerta)
                 <div class="alert alert-danger" role="alert">
                     <ul>
@@ -14,7 +14,7 @@
                     </ul>
                 </div>
             @endforeach
-        @endif --}}
+        @endif
         <br>
             <h2>Aquí puedes añadir un nuevo Estudiante</h2>
         <br>
@@ -75,23 +75,23 @@
                         @foreach ($paises as $paisExp)
                             <option value="">{{paisExp->nombrePais}} </option>
                         @endforeach
-                    </selec>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="idDepExp">Departamento de expedicion</label>
-                    <selec name="idDepExp" id="idDepExp">
+                    <select name="idDepExp" id="idDepExp">
                         @foreach ($departamentos as $depExp)
                             <option value="">{{depExp->nombreDepa}} </option>
                         @endforeach
-                    </selec>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="idMuniExp">Municipio de expedicion</label>
-                    <selec name="idMuniExp" id="idMuniExp">
+                    <select name="idMuniExp" id="idMuniExp">
                         @foreach ($municipios as $munExp)
                             <option value="">{{munExp->nombreMunici}} </option>
                         @endforeach
-                    </selec>
+                    </select>
                 </div>
 
 

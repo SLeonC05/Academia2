@@ -27,9 +27,8 @@ class EstudianteController extends Controller
      */
     public function create()
     {
-        $paises = Paises::all();
-        $departamentos = Departamentos::all();
-        return view('estudiantes.create', compact('paises','departamentos'));
+
+        return view('estudiantes.create');
     }
 
     /**
@@ -45,14 +44,21 @@ class EstudianteController extends Controller
         //return $request->all();
         $estudiantico->tipoDoc = $request->input('tipoDoc');
         $estudiantico->numDoc = $request->input('numDoc');
+        $estudiantico->fechaExp = $request->input('idPaisExp');
+        $estudiantico->fechaExp = $request->input('idDepExp');
         $estudiantico->fechaExp = $request->input('fechaExp');
+        $estudiantico->fechaExp = $request->input('idMuniExp');
         $estudiantico->nombres = $request->input('nombres');
         $estudiantico->primerApellido = $request->input('primerApellido');
         $estudiantico->segundoApellido = $request->input('segundoApellido');
         $estudiantico->genero = $request->input('genero');
-        $estudiantico->estrato = $request->input('estrato');
-        $estudiantico->idMuni = $request->input('idMuni');
+        $estudiantico->fechaExp = $request->input('fechaNacim');
+        $estudiantico->fechaExp = $request->input('idPaisNacim');
+        $estudiantico->fechaExp = $request->input('idDepNacim');
+        $estudiantico->fechaExp = $request->input('idMuniNacim');
         $estudiantico->idCurso = $request->input('idCurso');
+        $estudiantico->estrato = $request->input('estrato');
+
         if($request->hasFile('docIdent')){
             $estudiantico->docIdent = $request->file('docIdent')->store('public/estudiantes');
         }
