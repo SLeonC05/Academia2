@@ -15,7 +15,7 @@ class EstudianteController extends Controller
     public function index()
     {
         $estudiantico = Estudiantes::all();
-        return view('cursos.index', compact('estudiantico'));
+        return view('estudiantes.index', compact('estudiantico'));
     }
 
     /**
@@ -47,7 +47,8 @@ class EstudianteController extends Controller
      */
     public function show($id)
     {
-        //
+        $estudiantico = Estudiantes::find($id);
+        return view('estudiantes.show', compact('estudiantico'));
     }
 
     /**
@@ -58,7 +59,8 @@ class EstudianteController extends Controller
      */
     public function edit($id)
     {
-        //
+        $estudiantico = Estudiantes::find($id);
+        return view('estudiantes.edit', compact('estudiantico'));
     }
 
     /**
