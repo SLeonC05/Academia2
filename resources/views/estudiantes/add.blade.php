@@ -5,7 +5,7 @@
 @section('contenido')
     <div class="text-center">
         <div class="alert alert-success" role="alert">
-            El docente se  añadido con exito...
+            El estudiante se  añadido con exito...
         </div>
         <a href="/estudiantes" class="m-5 btn btn-primary">Volver</a>
     </div>

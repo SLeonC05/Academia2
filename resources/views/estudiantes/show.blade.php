@@ -14,7 +14,7 @@
             <iframe width="400" height="400" src="{{Storage::url($estudiantico->docIdent)}}"></iframe>
             <p class="card-text">Fecha de expedición del documento: {{$estudiantico->fechaExp}}</p>
             <p class="card-text">Genero: {{$estudiantico->genero}}</p>
-            <p class="card-text">Municipio de nacimiento: {{$estudiantico->idmunNacimi}}</p>
+            <p class="card-text">Municipio de nacimiento: {{$estudiantico->idMuni}}</p>
             <p class="card-text">Curso: {{$estudiantico->idCurso}}</p>
             <p class="card-text">Estrato socioeconomico: {{$estudiantico->estrato}}</p>
         </div>

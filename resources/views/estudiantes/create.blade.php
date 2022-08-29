@@ -52,13 +52,14 @@
                     <label for="fechaExp">Fecha de expedición del documento</label>
                     <input id="fechaExp" class="form-control" type="date" name="fechaExp">
                 </div>
+
                 <div class="form-group">
                     <label for="genero">Genero</label>
                     <input id="genero" class="form-control" type="text" name="genero">
                 </div>
                 <div class="form-group">
-                    <label for="idmunNacim">Municipio de nacimiento</label>
-                    <input id="idmunNacim" class="form-control" type="text" name="idmunNacim">
+                    <label for="idMuni">Municipio de nacimiento</label>
+                    <input id="idMuni" class="form-control" type="text" name="idMuni">
                 </div>
                 <div class="form-group">
                     <label for="idCurso">Curso</label>

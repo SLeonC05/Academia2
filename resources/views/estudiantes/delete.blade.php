@@ -5,7 +5,7 @@
 @section('contenido')
     <div class="text-center">
         <div class="alert alert-danger" role="alert">
-            El docente ha sido eliminado...
+            El estudiante ha sido eliminado...
         </div>
         <a href="/estudiantes" class="m-5 btn btn-primary">Volver</a>
     </div>
