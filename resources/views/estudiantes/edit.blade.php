@@ -54,6 +54,31 @@
                 <br>
                 <input id="docIdent" type="file" name="docIdent">
             </div>
+            
+            <div class="form-group">
+                <label for="idPaisExp">Pais de expedicion</label>
+                <selec name="idPaisExp" id="idPaisExp">
+                    @foreach ($paises as $paisExp)
+                        <option value="">{{paisExp->nombrePais}} </option>
+                    @endforeach
+                </selec>
+            </div>
+            <div class="form-group">
+                <label for="idDepExp">Departamento de expedicion</label>
+                <selec name="idDepExp" id="idDepExp">
+                    @foreach ($departamentos as $depExp)
+                        <option value="">{{depExp->nombreDepa}} </option>
+                    @endforeach
+                </selec>
+            </div>
+            <div class="form-group">
+                <label for="idMuniExp">Municipio de expedicion</label>
+                <selec name="idMuniExp" id="idMuniExp">
+                    @foreach ($municipios as $munExp)
+                        <option value="">{{munExp->nombreMunici}} </option>
+                    @endforeach
+                </selec>
+            </div>
             </div>
             </div>
             <br>
