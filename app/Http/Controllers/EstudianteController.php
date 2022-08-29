@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Departamentos;
 use App\Models\Estudiantes;
+use App\Models\Paises;
 use Illuminate\Http\Request;
 
 class EstudianteController extends Controller
@@ -25,7 +27,9 @@ class EstudianteController extends Controller
      */
     public function create()
     {
-        return view('estudiantes.create');
+        $paises = Paises::all();
+        $departamentos = Departamentos::all();
+        return view('estudiantes.create', compact('paises','departamentos'));
     }
 
     /**
@@ -47,11 +51,13 @@ class EstudianteController extends Controller
         $estudiantico->segundoApellido = $request->input('segundoApellido');
         $estudiantico->genero = $request->input('genero');
         $estudiantico->estrato = $request->input('estrato');
+        $estudiantico->idMuni = $request->input('idMuni');
+        $estudiantico->idCurso = $request->input('idCurso');
         if($request->hasFile('docIdent')){
             $estudiantico->docIdent = $request->file('docIdent')->store('public/estudiantes');
         }
         $estudiantico->save();//Con el comando save se registra la info en la db
-        return 'Guardado exitosamente';
+        return view('estudiantes.add');
         //return $request->input('nombre');
 
     }
@@ -64,7 +70,7 @@ class EstudianteController extends Controller
      */
     public function show($id)
     {
-        $estudiantes = Estudiantes::find($id);
+        $estudiantico = Estudiantes::find($id);
         return view('estudiantes.show', compact('estudiantico'));
     }
 
@@ -76,7 +82,7 @@ class EstudianteController extends Controller
      */
     public function edit($id)
     {
-        $estudiantes= Estudiantes::find($id);
+        $estudiantico= Estudiantes::find($id);
         return view('estudiantes.edit', compact('estudiantico'));
     }
 
