@@ -32,7 +32,40 @@
                         <input id="primerApellido" class="form-control" type="text" name="primerApellido" value="{{$estudiantico->primerApellido}}">
                     </div>
 
+                    <div class="form-group">
+                        <label for="docIdent">Editar documento</label>
+                        <br>
+                        <img width="400" src="{{Storage::url($estudiantico->docIdent)}}" alt="">
+                        <br>
+                        <br>
+                        <input id="docIdent" type="file" name="docIdent">
+                    </div>
 
+                    <div class="form-group">
+                        <label for="idPaisExp">Pais de expedicion</label>
+                        <selec name="idPaisExp" id="idPaisExp">
+                            @foreach ($paises as $paisExp)
+                                <option value="">{{paisExp->nombrePais}} </option>
+                            @endforeach
+                        </selec>
+                    </div>
+                    <div class="form-group">
+                        <label for="idDepExp">Departamento de expedicion</label>
+                        <selec name="idDepExp" id="idDepExp">
+                            @foreach ($departamentos as $depExp)
+                                <option value="">{{depExp->nombreDepa}} </option>
+                            @endforeach
+                        </selec>
+                    </div>
+                    <div class="form-group">
+                        <label for="idMuniExp">Municipio de expedicion</label>
+                        <selec name="idMuniExp" id="idMuniExp">
+                            @foreach ($municipios as $munExp)
+                                <option value="">{{munExp->nombreMunici}} </option>
+                            @endforeach
+                        </selec>
+                    </div>
+                    </div>
                     <div class="form-group">
                         <label for="segundoApellido">Editar los apellidos del estudiante</label>
                         <input id="segundoApellido" class="form-control" type="text" name="segundoApellido" value="{{$estudiantico->segundoApellido}}">
