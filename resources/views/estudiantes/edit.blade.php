@@ -8,6 +8,9 @@
         @csrf
         <br>
             <h2>Aquí puedes editar la información del estudiante</h2>
+            <br>
+            <div class="row">
+                <div class="col-6">
             <div class="form-group">
                 <label for="tipoDoc">Editar tipo de documento</label>
                 <input id="tipoDoc" class="form-control" type="text" name="tipoDoc" value="{{$estudiantico->tipoDoc}}">
@@ -32,6 +35,7 @@
                 <label for="segundoApellido">Editar los apellidos del estudiante</label>
                 <input id="segundoApellido" class="form-control" type="text" name="segundoApellido" value="{{$estudiantico->segundoApellido}}">
             </div>
+            <div class="col-6">
 
             <div class="form-group">
                 <label for="genero">Editar genero</label>
@@ -49,6 +53,8 @@
                 <br>
                 <br>
                 <input id="docIdent" type="file" name="docIdent">
+            </div>
+            </div>
             </div>
             <br>
             <button class="btn btn-info" type="submit">Actualizar</button>
