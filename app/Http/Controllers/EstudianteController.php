@@ -50,15 +50,16 @@ class EstudianteController extends Controller
         //return $request->all();
         $estudiantico->tipoDoc = $request->input('tipoDoc');
         $estudiantico->numDoc = $request->input('numDoc');
+        $estudiantico->idMuniExp = $request->input('idMuniExp');
         $estudiantico->fechaExp = $request->input('fechaExp');
         $estudiantico->nombres = $request->input('nombres');
         $estudiantico->primerApellido = $request->input('primerApellido');
         $estudiantico->segundoApellido = $request->input('segundoApellido');
         $estudiantico->genero = $request->input('genero');
-        $estudiantico->estrato = $request->input('estrato');
-        $estudiantico->idMuni = $request->input('idMuniExp');
+        $estudiantico->fechaNacim = $request->input('fechaNacim');
+        $estudiantico->idMuni = $request->input('idMuni');
         $estudiantico->idCurso = $request->input('idCurso');
-        $estudiantico->idMuni = $request->input('idMuniNacim');
+        $estudiantico->estrato = $request->input('estrato');
         if($request->hasFile('docIdent')){
             $estudiantico->docIdent = $request->file('docIdent')->store('public/estudiantes');
         }
