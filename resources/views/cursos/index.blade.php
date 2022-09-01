@@ -9,7 +9,7 @@
     {{--Foreach sirve para iterar arrays. Es decir permite ciclos en listas--}}
     <div class="row">
         @foreach ($cursito as $item)
-                <div class="col-sm">
+                <div class="col-sm m-3">
                     <div class="card" style="width: 18rem;">
                         <img style="height: 150px " class="card-img-top" src="{{Storage::url($item->imagen)}}" alt="Card image cap">
                         <div class="card-body">
