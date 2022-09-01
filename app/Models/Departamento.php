@@ -17,7 +17,7 @@ class Departamento extends Model
         return $this->hasMany(Municipio::class);
     }
 
-    public function estudiantes(){
-        return $this->hasMany(Estudiante::class);
-    }
+    // public function estudiantes(){
+    //     return $this->hasMany(Estudiante::class);
+    // }
 }

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('nombreMateria');
-            $table->string('intensiadad');
+            $table->string('intensidad');
         });
     }
 

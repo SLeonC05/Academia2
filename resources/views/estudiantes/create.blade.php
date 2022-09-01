@@ -34,7 +34,13 @@
                 </div>
                 <div class="form-group">
                     <label for="tipoDoc">Tipo de documento</label>
-                    <input id="tipoDoc" class="form-control" type="text" name="tipoDoc">
+                    <select name="tipoDoc" id="tipoDoc" class="form-control">
+                        <option value="CC">Cedula</option>
+                        <option value="TI">Tarjeta de identidad</option>
+                        <option value="PAS">Pasaporte</option>
+                        <option value="REG">Registro civil</option>
+                        <option value="CE">Cedula de extrangeria</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="numDoc">Numero de documento</label>
@@ -77,7 +83,11 @@
                 </div>
                 <div class="form-group">
                     <label for="genero">Genero</label>
-                    <input id="genero" class="form-control" type="text" name="genero">
+                    <select name="genero" id="genero" class="form-control">
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                        <option value="O">Otro</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="idPaisNacim">Pais de nacimiento</label>
@@ -96,8 +106,8 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="idMuniNacim">Municipio de nacimiento</label>
-                    <select class="form-control" name="idMuniNacim" id="idMuniNacim">
+                    <label for="idMuni">Municipio de nacimiento</label>
+                    <select class="form-control" name="idMuni" id="idMuni">
                         @foreach ($municipios as $munNacim)
                             <option value="">{{$munNacim->nombreMunici}} </option>
                         @endforeach
@@ -105,11 +115,14 @@
                 </div>
                 <div class="form-group">
                     <label for="idCurso">Curso</label>
-                    <input id="idCurso" class="form-control" type="text" name="idCurso">
-                </div>
+                    <select class="form-control" name="idCurso" id="idCurso">
+                        @foreach ($cursito as $curso)
+                            <option value="">{{$curso->nombre}} </option>
+                        @endforeach
+                    </select>                </div>
                 <div class="form-group">
                     <label for="estrato">Estrato socioeconomico</label>
-                    <input id="estrato" class="form-control" type="text" name="estrato">
+                    <input id="estrato" class="form-control" type="number" name="estrato">
                 </div>
             </div>
         </div>

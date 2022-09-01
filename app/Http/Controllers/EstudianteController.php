@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Curso;
 use App\Models\Departamento;
-use App\Models\Departamentos;
-use App\Models\Estudiantes;
+use App\Models\Estudiante;
 use App\Models\Municipio;
 use App\Models\Pais;
-use App\Models\Paises;
 use Illuminate\Http\Request;
 
 class EstudianteController extends Controller
@@ -19,7 +18,7 @@ class EstudianteController extends Controller
      */
     public function index()
     {
-        $estudiantico = Estudiantes::all();
+        $estudiantico = Estudiante::all();
         return view('estudiantes.index', compact('estudiantico'));
     }
 
@@ -33,7 +32,9 @@ class EstudianteController extends Controller
         $paises = Pais::all();
         $departamentos = Departamento::all();
         $municipios = Municipio::all();
-        return view('estudiantes.create', compact('paises','departamentos', 'municipios'));
+        $cursito = Curso::all();
+        return view('estudiantes.create', compact('paises','departamentos', 'municipios', 'cursito'));
+        // return $paises;
     }
 
     /**
@@ -44,7 +45,7 @@ class EstudianteController extends Controller
      */
     public function store(Request $request)
     {
-        $estudiantico = new Estudiantes();//Lo que hicimos fue crear una instancia de la clase Curso
+        $estudiantico = new Estudiante();//Lo que hicimos fue crear una instancia de la clase Curso
         //Se devuelve la peticion hecha al servidor
         //return $request->all();
         $estudiantico->tipoDoc = $request->input('tipoDoc');
@@ -55,8 +56,9 @@ class EstudianteController extends Controller
         $estudiantico->segundoApellido = $request->input('segundoApellido');
         $estudiantico->genero = $request->input('genero');
         $estudiantico->estrato = $request->input('estrato');
-        $estudiantico->idMuni = $request->input('idMuni');
+        $estudiantico->idMuni = $request->input('idMuniExp');
         $estudiantico->idCurso = $request->input('idCurso');
+        $estudiantico->idMuni = $request->input('idMuniNacim');
         if($request->hasFile('docIdent')){
             $estudiantico->docIdent = $request->file('docIdent')->store('public/estudiantes');
         }
@@ -74,7 +76,7 @@ class EstudianteController extends Controller
      */
     public function show($id)
     {
-        $estudiantico = Estudiantes::find($id);
+        $estudiantico = Estudiante::find($id);
         return view('estudiantes.show', compact('estudiantico'));
     }
 
@@ -86,7 +88,7 @@ class EstudianteController extends Controller
      */
     public function edit($id)
     {
-        $estudiantico= Estudiantes::find($id);
+        $estudiantico= Estudiante::find($id);
         return view('estudiantes.edit', compact('estudiantico'));
     }
 
@@ -99,7 +101,7 @@ class EstudianteController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $estudiantico = Estudiantes::find($id);
+        $estudiantico = Estudiante::find($id);
         $estudiantico->fill($request->except('docIdent'));
         if($request->hasFile('docIdent')){
             $estudiantico->docIdent = $request->file('docIdent')->store('public/estudiantes');
@@ -116,7 +118,7 @@ class EstudianteController extends Controller
      */
     public function destroy($id)
     {
-        $estudiantico = Estudiantes::find($id);
+        $estudiantico = Estudiante::find($id);
         $urldocIdentBD = $estudiantico->docIdent;
         $nombreImagen = str_replace('public/', '\storage\\', $urldocIdentBD);
         $rutaCompleta = public_path().$nombreImagen;

@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pais', function (Blueprint $table) {
+        Schema::create('departamentos', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('nombrePais');
+            $table->string('nombreDepa');
+            $table->unsignedBigInteger('idPais');
 
-            $table->foreign('id')->references('id')->on('Paises')->onDelete('cascade')->onUpdate('cascade');;
-
+            $table->foreign('idPais')->references('id')->on('pais')->onDelete('cascade')->onUpdate('cascade');;
         });
     }
 
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pais');
+        Schema::dropIfExists('departamentos');
     }
 };
