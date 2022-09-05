@@ -18,22 +18,16 @@ return new class extends Migration
             $table->text('tipoDoc');
             $table->integer('numDoc');
             $table->string('docIdent');
-            $table->string('idPaisExp');
-            $table->string('idDepExp');
             $table->date('fechaExp');
             $table->unsignedBigInteger('idMuniExp');
             $table->text('nombres');
             $table->text('primerApellido');
             $table->text('segundoApellido');
             $table->text('genero');
-            $table->date('fechaNacim');
-            $table->string('idPaisNacim');
-            $table->string('idDepNacim');
             $table->unsignedBigInteger('idMuni');
             $table->unsignedBigInteger('idCurso');
             $table->integer('estrato');
             $table->timestamps();
-
 
             $table->foreign('idMuniExp')->references('id')->on('municipios')->onDelete('cascade')->onUpdate('cascade');;
             $table->foreign('idMuni')->references('id')->on('municipios')->onDelete('cascade')->onUpdate('cascade');;

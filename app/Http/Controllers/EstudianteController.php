@@ -56,9 +56,9 @@ class EstudianteController extends Controller
         $estudiantico->segundoApellido = $request->input('segundoApellido');
         $estudiantico->genero = $request->input('genero');
         $estudiantico->estrato = $request->input('estrato');
-        $estudiantico->idMuni = $request->input('idMuniExp');
+        $estudiantico->idMuniExp = $request->input('idMuniExp');
         $estudiantico->idCurso = $request->input('idCurso');
-        $estudiantico->idMuni = $request->input('idMuniNacim');
+        $estudiantico->idMuni = $request->input('idMuni');
         if($request->hasFile('docIdent')){
             $estudiantico->docIdent = $request->file('docIdent')->store('public/estudiantes');
         }

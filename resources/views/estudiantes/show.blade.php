@@ -27,7 +27,7 @@
         <form class="form-group" action="/estudiantes/{{$estudiantico->id}}" method="POST">
             @csrf
             @method('DELETE')
-            <button type="submit" class="btn btn-danger">Eliminar Docente</button>
+            <button type="submit" class="btn btn-danger">Eliminar Estudiante</button>
         </form>
 
 
