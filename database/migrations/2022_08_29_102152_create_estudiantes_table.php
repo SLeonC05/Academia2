@@ -24,12 +24,10 @@ return new class extends Migration
             $table->text('primerApellido');
             $table->text('segundoApellido');
             $table->text('genero');
-            $table->date('fechaNacim');
             $table->unsignedBigInteger('idMuni');
             $table->unsignedBigInteger('idCurso');
             $table->integer('estrato');
             $table->timestamps();
-
 
             $table->foreign('idMuniExp')->references('id')->on('municipios')->onDelete('cascade')->onUpdate('cascade');;
             $table->foreign('idMuni')->references('id')->on('municipios')->onDelete('cascade')->onUpdate('cascade');;

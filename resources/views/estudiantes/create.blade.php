@@ -73,7 +73,7 @@
                     <label for="idMuniExp">Municipio de expedicion</label>
                     <select class="form-control" name="idMuniExp" id="idMuniExp">
                         @foreach ($municipios as $munExp)
-                            <option value="">{{$munExp->nombreMunici}} </option>
+                            <option value="{{$munExp->id}}">{{$munExp->nombreMunici}} </option>
                         @endforeach
                     </select>
                 </div>
@@ -109,7 +109,7 @@
                     <label for="idMuni">Municipio de nacimiento</label>
                     <select class="form-control" name="idMuni" id="idMuni">
                         @foreach ($municipios as $munNacim)
-                            <option value="">{{$munNacim->nombreMunici}} </option>
+                            <option value="{{$munNacim->id}}">{{$munNacim->nombreMunici}} </option>
                         @endforeach
                     </select>
                 </div>
@@ -117,7 +117,7 @@
                     <label for="idCurso">Curso</label>
                     <select class="form-control" name="idCurso" id="idCurso">
                         @foreach ($cursito as $curso)
-                            <option value="">{{$curso->nombre}} </option>
+                            <option value="{{$curso->id}}">{{$curso->nombre}} </option>
                         @endforeach
                     </select>                </div>
                 <div class="form-group">
