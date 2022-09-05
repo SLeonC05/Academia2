@@ -79,7 +79,25 @@ class EstudianteController extends Controller
     public function show($id)
     {
         $estudiantico = Estudiante::find($id);
-        return view('estudiantes.show', compact('estudiantico'));
+        $query1 = Municipio::join(
+            'estudiantes', 'estudiantes.idMuniExp', 'municipios.id'
+        )
+        ->join('departamentos', 'departamentos.id', 'municipios.idDep')
+        ->join('pais', 'pais.id', 'departamentos.idPais')
+        ->where('estudiantes.id', $id)
+        ->select('municipios.nombreMunici as nombreMuni', 'departamentos.nombreDepa as nombreDepart', 'pais.nombrePais as nomPais')
+        ->get();
+
+        $query2 = Municipio::join(
+            'estudiantes', 'estudiantes.idMuni', 'municipios.id'
+        )
+        ->join('departamentos', 'departamentos.id', 'municipios.idDep')
+        ->join('pais', 'pais.id', 'departamentos.idPais')
+        ->where('estudiantes.id', $id)
+        ->select('municipios.nombreMunici as nombreMuni', 'departamentos.nombreDepa as nombreDepart', 'pais.nombrePais as nomPais')
+        ->get();
+
+        return view('estudiantes.show', compact('estudiantico', 'query1', 'query2'));
     }
 
     /**

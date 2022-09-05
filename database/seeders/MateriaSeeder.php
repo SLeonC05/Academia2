@@ -17,23 +17,23 @@ class MateriaSeeder extends Seeder
     {
         Materia::create([
             'id' => '1',
-            'nombreMateria' => 'Ingles',
+            'nombreMateria' => 'Vocabulario',
             'intensidad' => '60 Horas'
         ]);
         Materia::create([
             'id' => '2',
-            'nombreMateria' => 'Frances',
+            'nombreMateria' => 'Comunicacion oral y escria',
             'intensidad' => '60 Horas'
         ]);
         Materia::create([
             'id' => '3',
-            'nombreMateria' => 'Portugues',
+            'nombreMateria' => 'Exposiciones',
             'intensidad' => '80 Horas'
         ]);
         Materia::create([
             'id' => '4',
-            'nombreMateria' => 'Aleman',
-            'intensidad' => '100 Horas'
+            'nombreMateria' => 'Aleman Master',
+            'intensidad' => '3450 Horas'
         ]);
     }
 }

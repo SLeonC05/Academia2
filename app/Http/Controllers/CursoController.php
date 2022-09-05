@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\storeCursoRequest;
 use App\Models\Curso;
+use App\Models\Materia;
 use Illuminate\Http\Request;
 
 class CursoController extends Controller
@@ -64,7 +65,8 @@ class CursoController extends Controller
     public function show($id)
     {
         $cursito = Curso::find($id);
-        return view('cursos.show', compact('cursito'));
+        $materias = Materia::all();
+        return view('cursos.show', compact('cursito', 'materias'));
         //return view('cursos.show');
         //return 'El id de este curso es: ' . $id;
     }

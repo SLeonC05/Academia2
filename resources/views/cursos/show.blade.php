@@ -3,14 +3,22 @@
 @section('titulo', 'Detalle Curso')
 
 @section('contenido')
-    <div class="text-center">
+    <div class="text-">
         <div class="m-auto">
             <img width="300" src="{{Storage::url($cursito->imagen)}}" alt="">
-            <p class="card-text">Descripción: {{$cursito->descripcion}}</p>
-            <p class="card-text">Duración: {{$cursito->duracion}} horas</p>
+            <p class="card-text"><b>Descripción: </b>{{$cursito->descripcion}}</p>
+            <p class="card-text"><b>Duración: </b>{{$cursito->duracion}} horas</p>
+            <div>
+                <label for="materia"><b>Materias del curso</b></label>
+                <select class="form-control text-center" name="materias" id="materias" style="width: 30%">
+                    @foreach ($materias as $materia)
+                        <option value="">{{$materia->nombreMateria}}</option>
+                    @endforeach
+                </select>
+            </div>
+            <br>
             <a href="/cursos/{{$cursito->id}}/edit" class="btn btn-success">Editar</a>
         </div>
-        <br>
         <br>
         {{--Creacion de campo Eliminar en la vista. Por medio del metodo DELETE,
             ademas de la ruta que debe retornar--}}
