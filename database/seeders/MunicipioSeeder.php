@@ -65,5 +65,16 @@ class MunicipioSeeder extends Seeder
             'nombreMunici' => 'Sabadell',
             'idDep' => '5'
         ]);
+        Municipio::create([
+            'id' => 11,
+            'nombreMunici' => 'Maracay',
+            'idDep' => '6'
+        ]);
+        Municipio::create([
+            'id' => 12,
+            'nombreMunici' => 'Tabai',
+            'idDep' => '7'
+        ]);
+
     }
 }

@@ -40,5 +40,16 @@ class DepartamentoSeeder extends Seeder
             'nombreDepa' => 'Sevilla',
             'idPais' => '2'
         ]);
+        Departamento::create([
+            'id' => 6,
+            'nombreDepa' => 'Aragua',
+            'idPais' => '3'
+        ]);
+        Departamento::create([
+            'id' => 7,
+            'nombreDepa' => 'Merida',
+            'idPais' => '3'
+        ]);
+
     }
 }

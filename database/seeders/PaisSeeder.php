@@ -23,5 +23,9 @@ class PaisSeeder extends Seeder
             'id' => 2,
             'nombrePais' => 'ESPAÑA'
         ]);
+        Pais::create([
+            'id' => 3,
+            'nombrePais' => 'VENEZUELA'
+        ]);
     }
 }

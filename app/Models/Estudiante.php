@@ -7,17 +7,20 @@ use Illuminate\Database\Eloquent\Model;
 
 class Estudiante extends Model
 {
-    protected $fillable = ['tipoDoc','numDoc', 'docIdent', 'idPaisExp', 'idDepExp', 'idMuniciExp', 'fechaExp', 'nombres', 'primerApellido', 'segundoApellido', 'genero', 'fechaNacim', 'idPaisNacim', 'idDepNacim', 'idMuni', 'idCurso', 'estrato'];
+    protected $fillable = ['tipoDoc','numDoc', 'docIdent',  'fechaExp', 'idMuniExp', 'nombres', 'primerApellido', 'segundoApellido', 'genero', 'fechaNacim', 'idMuni', 'idCurso', 'estrato'];
     use HasFactory;
 
     public function cursos(){
         return $this->belongsTo(Curso::class);
     }
-    // public function departamentos(){
-    //     return $this->belongsTo(Departamento::class);
-    // }
+    public function departamentos(){
+        return $this->belongsTo(Departamento::class);
+    }
 
     public function municipios(){
         return $this->belongsTo(Municipio::class);
+    }
+    public function docentes(){
+        return $this->belongsTo(Docente::class);
     }
 }

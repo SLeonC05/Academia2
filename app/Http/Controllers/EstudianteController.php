@@ -50,6 +50,7 @@ class EstudianteController extends Controller
         //return $request->all();
         $estudiantico->tipoDoc = $request->input('tipoDoc');
         $estudiantico->numDoc = $request->input('numDoc');
+        $estudiantico->idMuniExp = $request->input('idMuniExp');
         $estudiantico->fechaExp = $request->input('fechaExp');
         $estudiantico->nombres = $request->input('nombres');
         $estudiantico->primerApellido = $request->input('primerApellido');

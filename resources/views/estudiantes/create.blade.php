@@ -91,7 +91,7 @@
                 </div>
                 <div class="form-group">
                     <label for="idPaisNacim">Pais de nacimiento</label>
-                    <select class="form-control" id="idPaisNacim">
+                    <select class="form-control" id="idPaisNacim" name="idPaisNacim>
                         @foreach ($paises as $paisNacim)
                             <option value="">{{$paisNacim->nombrePais}} </option>
                         @endforeach
@@ -99,7 +99,7 @@
                 </div>
                 <div class="form-group">
                     <label for="idDepNacim">Departamento de nacimiento</label>
-                    <select class="form-control" id="idDepNacim">
+                    <select class="form-control" id="idDepNacim" name="idDepNacim>
                         @foreach ($departamentos as $depNacim)
                             <option value="">{{$depNacim->nombreDepa}} </option>
                         @endforeach
