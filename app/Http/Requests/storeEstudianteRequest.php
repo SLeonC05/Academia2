@@ -31,7 +31,6 @@ class storeEstudianteRequest extends FormRequest
             'nombres'=>'required|max: 50',
             'primerApellido'=>'required|max: 50',
             'segundoApellido'=>'required:string|max: 50',
-            'fechaNacim'=>'required:nullable|date',
         ];
     }
 }
