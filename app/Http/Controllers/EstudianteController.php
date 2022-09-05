@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\storeEstudianteRequest;
 use App\Models\Curso;
 use App\Models\Departamento;
 use App\Models\Estudiante;
@@ -43,10 +44,10 @@ class EstudianteController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(storeEstudianteRequest $request)
     {
         $estudiantico = new Estudiante();//Lo que hicimos fue crear una instancia de la clase Curso
-        //Se devuelve la peticion hecha al servidor
+    //Se devuelve la peticion hecha al servidor
         //return $request->all();
         $estudiantico->tipoDoc = $request->input('tipoDoc');
         $estudiantico->numDoc = $request->input('numDoc');
@@ -65,7 +66,7 @@ class EstudianteController extends Controller
         }
         $estudiantico->save();//Con el comando save se registra la info en la db
         return view('estudiantes.add');
-        //return $request->input('nombre');
+        //return $request;
 
     }
 
@@ -90,7 +91,11 @@ class EstudianteController extends Controller
     public function edit($id)
     {
         $estudiantico= Estudiante::find($id);
-        return view('estudiantes.edit', compact('estudiantico'));
+        $paises = Pais::all();
+        $departamentos = Departamento::all();
+        $municipios = Municipio::all();
+        $cursito = Curso::all();
+        return view('estudiantes.edit', compact('estudiantico', 'paises', 'departamentos', 'municipios', 'cursito'));
     }
 
     /**
@@ -103,12 +108,16 @@ class EstudianteController extends Controller
     public function update(Request $request, $id)
     {
         $estudiantico = Estudiante::find($id);
+        $paises = Pais::all();
+        $departamentos = Departamento::all();
+        $municipios = Municipio::all();
+        $cursito = Curso::all();
         $estudiantico->fill($request->except('docIdent'));
         if($request->hasFile('docIdent')){
             $estudiantico->docIdent = $request->file('docIdent')->store('public/estudiantes');
         }
         $estudiantico->save();
-        return view('estudiantes.upload');
+        return view('estudiantes.upload', compact('estudiantico', 'paises', 'departamentos', 'municipios', 'cursito'));
     }
 
     /**
@@ -120,11 +129,15 @@ class EstudianteController extends Controller
     public function destroy($id)
     {
         $estudiantico = Estudiante::find($id);
+        $paises = Pais::all();
+        $departamentos = Departamento::all();
+        $municipios = Municipio::all();
+        $cursito = Curso::all();
         $urldocIdentBD = $estudiantico->docIdent;
         $nombreImagen = str_replace('public/', '\storage\\', $urldocIdentBD);
         $rutaCompleta = public_path().$nombreImagen;
         unlink($rutaCompleta);
         $estudiantico -> delete();
-        return view('estudiantes.delete');
+        return view('estudiantes.delete', compact('estudiantico', 'paises', 'departamentos', 'municipios', 'cursito'));
     }
 }
