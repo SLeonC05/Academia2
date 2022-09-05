@@ -24,7 +24,6 @@ return new class extends Migration
             $table->text('primerApellido');
             $table->text('segundoApellido');
             $table->text('genero');
-            $table->date('fechaNacim');
             $table->unsignedBigInteger('idMuni');
             $table->unsignedBigInteger('idCurso');
             $table->integer('estrato');
