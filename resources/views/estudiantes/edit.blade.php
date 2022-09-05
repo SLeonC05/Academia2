@@ -3,18 +3,10 @@
 @section('titulo', 'Editar Estudiante')
 
 @section('contenido')
-    <form action="{{$estudiantico->id}}" method="POST" enctype="multipart/form-data">
+    <form action="/estudiantes/{{$estudiantico->id}}" method="POST" enctype="multipart/form-data">
+        @method('PUT')
         @csrf
 
-        {{-- @if ($errors->any())
-            @foreach ($errors->all() as $alerta)
-                <div class="alert alert-danger" role="alert">
-                    <ul>
-                        <li>{{$alerta}}</li>
-                    </ul>
-                </div>
-            @endforeach
-        @endif --}}
         <br>
             <h2>Aquí puedes editar la información del estudiante</h2>
         <br>

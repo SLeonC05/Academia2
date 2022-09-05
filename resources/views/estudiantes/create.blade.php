@@ -3,10 +3,10 @@
 @section('titulo', 'Añadir Estudiante')
 
 @section('contenido')
-    <form action="/estudiantes" method="POST" enctype="multipart/form-data">
+    <form action="/estudiantes/" method="POST" enctype="multipart/form-data">
         @csrf
 
-        {{-- @if ($errors->any())
+         @if ($errors->any())
             @foreach ($errors->all() as $alerta)
                 <div class="alert alert-danger" role="alert">
                     <ul>
@@ -14,7 +14,7 @@
                     </ul>
                 </div>
             @endforeach
-        @endif --}}
+        @endif
         <br>
             <h2>Aquí puedes añadir un nuevo Estudiante</h2>
         <br>
