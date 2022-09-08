@@ -22,15 +22,15 @@
             <div class="col-6">
                 <div class="form-group">
                     <label for="nombres">Nombres</label>
-                    <input id="nombres" class="form-control" type="text" name="nombres">
+                    <input id="nombres" class="form-control" type="text" name="nombres" placeholder="Nombres">
                 </div>
                 <div class="form-group">
                     <label for="primerApellido">Primer apellido</label>
-                    <input id="primerApellido" class="form-control" type="text" name="primerApellido">
+                    <input id="primerApellido" class="form-control" type="text" name="primerApellido" placeholder="Primer apellido">
                 </div>
                 <div class="form-group">
                     <label for="segundoApellido">Segundo apellido</label>
-                    <input id="segundoApellido" class="form-control" type="text" name="segundoApellido">
+                    <input id="segundoApellido" class="form-control" type="text" name="segundoApellido" placeholder="Segundo apellido">
                 </div>
                 <div class="form-group">
                     <label for="tipoDoc">Tipo de documento</label>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="form-group">
                     <label for="numDoc">Numero de documento</label>
-                    <input id="numDoc" class="form-control" type="text" name="numDoc">
+                    <input id="numDoc" class="form-control" type="text" name="numDoc" placeholder="Numero de documento">
                 </div>
                 <div class="form-group">
                     <label for="docIdent">Subir documento de identidad</label>
@@ -123,7 +123,7 @@
                 </div>
                 <div class="form-group">
                     <label for="estrato">Estrato socioeconomico</label>
-                    <input id="estrato" class="form-control" type="number" name="estrato">
+                    <input id="estrato" class="form-control" type="number" name="estrato" placeholder="Estrato">
                 </div>
             </div>
         </div>
