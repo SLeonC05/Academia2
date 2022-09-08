@@ -5,17 +5,22 @@
 @section('contenido')
     <div class="text-">
         <div class="m-auto">
-            <h2>Docente</h2>
-            <p class="card-text">Nombres: {{$docentico->nombres}}</p>
-            <p class="card-text">Apellidos: {{$docentico->apellidos}}</p>
-            <p class="card-text">Titulo Universitario: {{$docentico->titulo}}</p>
-            <p class="card-text">Edad: {{$docentico->edad}}</p>
-            <p class="card-text">Fecha de contratación: {{$docentico->fecha}}</p>
-            <img width="400" src="{{Storage::url($docentico->imagen)}}" alt="">
-            <br>
-            <br>
-            <p>Documento:</p>
-            <iframe width="400" height="400" src="{{Storage::url($docentico->documento)}}"></iframe>
+            <h2>Detalle del Docente</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p class="card-text"><b>Nombres:</b> {{$docentico->nombres}}</p>
+                    <p class="card-text"><b>Apellidos:</b> {{$docentico->apellidos}}</p>
+                    <p class="card-text"><b>Titulo Universitario:</b> {{$docentico->titulo}}</p>
+                    <p class="card-text"><b>Edad:</b> {{$docentico->edad}}</p>
+                    <p class="card-text"><b>Fecha de contratación:</b> {{$docentico->fecha}}</p>
+                    <p><b>Imagen:</b></p>
+                    <img width="400" src="{{Storage::url($docentico->imagen)}}" alt="">
+                </div>
+                <div class="col-6">
+                    <p><b>Documento:</b></p>
+                    <iframe width="400" height="400" src="{{Storage::url($docentico->documento)}}"></iframe>
+                </div>
+            </div>
         </div>
         <br>
         <a href="/docentes/{{$docentico->id}}/edit" class="btn btn-success">Editar Docente</a>

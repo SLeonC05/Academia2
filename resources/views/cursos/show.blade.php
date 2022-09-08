@@ -5,6 +5,7 @@
 @section('contenido')
     <div class="text-">
         <div class="m-auto">
+            <h2>Detalle del Curso</h2>
             <img width="300" src="{{Storage::url($cursito->imagen)}}" alt="">
             <p class="card-text"><b>Descripción: </b>{{$cursito->descripcion}}</p>
             <p class="card-text"><b>Duración: </b>{{$cursito->duracion}} horas</p>

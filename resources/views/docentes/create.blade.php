@@ -19,19 +19,19 @@
             <h2>Aquí puedes añadir un nuevo docente</h2>
             <div class="form-group">
                 <label for="nombres">Nombres</label>
-                <input id="nombres" class="form-control" type="text" name="nombres">
+                <input id="nombres" class="form-control" type="text" name="nombres" placeholder="Nombres">
             </div>
             <div class="form-group">
                 <label for="apellidos">Apellidos</label>
-                <input id="apellidos" class="form-control" type="text" name="apellidos">
+                <input id="apellidos" class="form-control" type="text" name="apellidos" placeholder="Apellidos">
             </div>
             <div class="form-group">
                 <label for="titulo">Titulo Universitario</label>
-                <input id="titulo" class="form-control" type="text" name="titulo">
+                <input id="titulo" class="form-control" type="text" name="titulo" placeholder="Titulo">
             </div>
             <div class="form-group">
                 <label for="edad">Edad</label>
-                <input id="edad" class="form-control" type="text" name="edad">
+                <input id="edad" class="form-control" type="text" name="edad" placeholder="Edad">
             </div>
             <div class="form-group">
                 <label for="fecha">Fecha de contrato</label>
