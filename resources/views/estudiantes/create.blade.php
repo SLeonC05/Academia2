@@ -22,7 +22,7 @@
             <div class="col-6">
                 <div class="form-group">
                     <label for="nombres">Nombres</label>
-                    <input id="nombres" class="form-control" type="text" name="nombres">
+                    <input id="nombres" class="form-control" type="text" name="nombres" preg_replace("/[^A-Za-z0-9\-]/")>
                 </div>
                 <div class="form-group">
                     <label for="primerApellido">Primer apellido</label>
