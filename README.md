@@ -75,6 +75,7 @@ Permite ir a un controlador específico cuando se da Alt clic (o Ctrl clic) sobr
 ● Laravel goto view
 
 Con el cual se puede ir rápidamente a una vista específica.
+
 ● PHP Intelephense
 
 Una poderosa herramienta para trabajar con lenguaje PHP, resalta errores típicos, emite
