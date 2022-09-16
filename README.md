@@ -272,7 +272,8 @@ A través del siguiente panel se pueden hacer configuraciones en la base de dato
 
 ## Detalles de los modelos y migraciones Laravel:
 
-1)![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/migracion1.png?raw=true)
+1)
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/migracion1.png?raw=true)
 
 Esta migración es referente al modelo Curso, la cual contiene toda la información para la tabla
 curso, para la cual se han definido los siguientes campos y tipos de datos:
@@ -284,18 +285,27 @@ El modelo respectivo se llama Curso
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/curso1.png?raw=true)
 
 2)
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/migracion2.png?raw=true)
 
 Esta migración es referente al modelo Estudiante, la cual contiene toda la información para la
 tabla estudiante, para la cual se han definido los siguientes campos y tipos de datos:
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/campo2.png?raw=true)
 
 El modelo respectivo se llama Estudiante
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/modelo2.png?raw=true)
+
 3)
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/migracion3.png?raw=true)
 
 Esta migración es referente al modelo Docente, la cual contiene toda la información para la tabla
 docentes, para la cual se han definido los siguientes campos y tipos de datos:
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/campos3.png?raw=true)
+
 El modelo respectivo se llama Docente
+
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/modelo3.png?raw=true)
 
 4)
 
