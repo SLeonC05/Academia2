@@ -251,7 +251,7 @@ la información respectiva en el archivo .env
 
 A través del siguiente panel se pueden hacer configuraciones en la base de datos:
 
-Detalles de los modelos y migraciones Laravel:
+#### Detalles de los modelos y migraciones Laravel:
 
 1)
 
