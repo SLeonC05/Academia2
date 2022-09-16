@@ -48,6 +48,8 @@ que facilite trabajar visualmente la base de datos, en este caso se recomienda X
 
 #### 5.2.Visual Studio Code
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/visual%20studio.png?raw=true)
+
 Se optó por esta herramienta por su versatilidad, facilidad de uso, y aspecto
 moderno. Permite el uso de gran cantidad de extensiones, su aprendizaje es rápido, la
 integración con GitHub es intuitiva y, sin lugar a dudas, es uno de los editores más
@@ -83,10 +85,14 @@ sugerencias de código, entre otras funcionalidades
 
 #### 5.3. Framework Laravel
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/laravel.png?raw=true)
+
 Laravel es uno de los frameworks de código abierto más fáciles de asimilar para PHP. Es
 simple, muy potente y tiene una interfaz elegante y divertida de usar. Se usó la versión 4.2. El link de descarga es: https://laravel.com/docs/4.2
 
 #### 5.4. GitHub
+
+![image](https://user-images.githubusercontent.com/99735915/190681607-6a9837b2-ad4b-465c-83db-d2c8ed8fed40.png)
 
 En este repositorio online se realizó el trabajo colaborativo con los desarrolladores para
 realizar las respectivas modificaciones al aplicativo
@@ -99,7 +105,11 @@ la cual consiste en dividir en fases cada etapa del desarrollo de software y com
 
 #### Modelo de metodología en cascada
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/cascada.png?raw=true)
+
 #### Trabajo desde ramas en GitHub
+
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/ramas.png?raw=true)
 
 ## 7. REQUISITOS TÉCNICOS PARA DESARROLLAR EL SISTEMA
 
@@ -177,12 +187,17 @@ Junta Directiva de la Academia..
 
 #### 10.1.1. Controladores de recursos
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/controladores.png?raw=true)
+
 Dentro de Http se tiene la carpeta Controllers, donde a su vez se tinene los siguientes
 controladores que son de recursos:
 
 CursoController.php: Se encarga de manejar toda la lógica para la tabla Curso del sistema, donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista. DocenteController.php: Se encarga de manejar toda la lógica para la tabla Docente del sistema, donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista. EstudianteController.php: Se encarga de manejar toda la lógica para la tabla Estudiante delsistema, donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista..
 
 #### 10.1.2. Migraciones:
+
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/migraciones.png?raw=true)
+
 En el proyecto se pueden apreciar las siguientes migraciones, dentro de
 la ruta database/Migrations:
 
@@ -213,6 +228,8 @@ Esta migración se refiere a la tabla cursos, donde se describen los campos tale
 
 #### 10.1.3. Rutas principales para el proyecto Laravel
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/rutas.png?raw=true)
+
 Dentro del archivo web.php que está en routers, se encuentran las rutas principales del proyecto
 como:
 ‘/’: esta ruta provee acceso a la página principal del Proyecto Academia.
@@ -230,11 +247,15 @@ diferentes vistas.
 ‘/estudiantes’: esta ruta provee acceso a el controlador de estudiantes, el cual contiene las rutas
 de las diferentes vistas.
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/routes.png?raw=true)
+
 ## 11. CONFIGURACIÓN DE LA BASE DE DATOS
 
-Para el caso particular se usó MySQL y, específicamente, PhpMyadmin, herramienta contenida
-en Xampp. Para poder trabajar en producción con la base de datos, se deben habilitar los servicios de Apache
-y MySQL, dando clic en los botones start del control panel. Si algún puerto está ocupado, se hace el respectivo cambio usando el botón Admin.
+Para el caso particular se usó MySQL y, específicamente, PhpMyadmin, herramienta contenida en Xampp. Para poder trabajar en producción con la base de datos, se deben habilitar los servicios de Apache y MySQL, dando clic en los botones start del control panel. 
+
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/xamp.png?raw=true)
+
+Si algún puerto está ocupado, se hace el respectivo cambio usando el botón Admin.
 
 Los datos de acceso a la base de datos son:
 
@@ -249,31 +270,49 @@ Nombre de la BD: academia2
 Para la correcto configuración del proyecto Laravel y su conexión con la base de datos se agrega
 la información respectiva en el archivo .env
 
+
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/.env.png?raw=true)
+
 A través del siguiente panel se pueden hacer configuraciones en la base de datos:
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/bd.png?raw=true)
 
 ## Detalles de los modelos y migraciones Laravel:
 
 1)
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/migracion1.png?raw=true)
 
 Esta migración es referente al modelo Curso, la cual contiene toda la información para la tabla
 curso, para la cual se han definido los siguientes campos y tipos de datos:
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/curso1.png?raw=true)
+
 El modelo respectivo se llama Curso
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/curso1.png?raw=true)
 
 2)
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/migracion2.png?raw=true)
 
 Esta migración es referente al modelo Estudiante, la cual contiene toda la información para la
 tabla estudiante, para la cual se han definido los siguientes campos y tipos de datos:
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/campo2.png?raw=true)
+
 El modelo respectivo se llama Estudiante
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/modelo2.png?raw=true)
+
 3)
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/migracion3.png?raw=true)
 
 Esta migración es referente al modelo Docente, la cual contiene toda la información para la tabla
 docentes, para la cual se han definido los siguientes campos y tipos de datos:
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/campos3.png?raw=true)
+
 El modelo respectivo se llama Docente
+
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/modelo3.png?raw=true)
 
 4)
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/migracion4.png?raw=true)
@@ -284,6 +323,7 @@ materias, para la cual se han definido los siguientes campos y tipos de datos:
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/campo4.png?raw=true)
 
 El modelo respectivo se llama Materia
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/modelo4.png?raw=true)
 
 5)
@@ -295,6 +335,7 @@ países, para la cual se han definido los siguientes campos y tipos de datos:
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/campo5.png?raw=true)
 
 El modelo respectivo se llama País
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/modelo5.png?raw=true)
 
 6)
@@ -305,6 +346,7 @@ departamentos, para la cual se han definido los siguientes campos y tipos de dat
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/campo6.png?raw=true)
 
 El modelo respectivo se llama Departamento
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/modelo6.png?raw=true)
 
 7)
@@ -312,9 +354,11 @@ El modelo respectivo se llama Departamento
 
 Esta migración es referente al modelo Municipio, la cual contiene toda la información para la
 tabla municipios, para la cual se han definido los siguientes campos y tipos de datos:
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/campo7.png?raw=true)
 
 El modelo respectivo se llama Municipio
+
 
 
 ## 12. DETALLES TÉCNICOS MÓDULOS DEL SISTEMA
@@ -325,40 +369,49 @@ Este módulo se ha creado para estudiantes de la academia, cualquier persona pue
 Al entrar a este módulo desde el navegador se vería así:
 
 La vista (view) en Laravel que permite renderizar esta vista es estudiantes.show.blade. Además, existen otras vistas, dentro de la carpeta estudiantes, relacionadas con este módulo, los cuales permiten realizar el respectivo CRUD, como son:
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/vistacreate1.png?raw=true)
 
 #### Create.blade.php
 Vista que provee el siguiente formulario en el navegador:
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/vistacreate2.png?raw=true)
 
 #### Show.blade.php
 Vista que provee toda la información suministrada en el navegador posterior a haber diligenciado el formulario, esta vista también está enlazada con la vista edit.blade.php para la edición del mismo formulario o su eliminacion.
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/vistashow.png?raw=true)
 
 #### Edit.blade.php
 Vista que provee el formulario en el navegador que permite actualizar la información del estudiante en la base de datos
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/vistaedit.png?raw=true)
 
 #### Index.blade.php
 Vista que provee una visión general de los estudiantes registrados en la base de datos, además de enlazarse a la vista create para ingresar más estudiantes
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/vistaindex.png?raw=true)
 
 #### Update.blade.php
 Vista que provee un mensaje de alerta luego de realizada la actualización de los datos de cada estudiante, con su respectivo retorno a la vista index.blade.php
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/update.png?raw=true)
 
 #### Delete.blade.php
 Vista que provee un mensaje de alerta luego de dar clic en el botón eliminar de la vista
 show.blade.php, este elimina el registro del estudiante de la base de datos, con su respectivo retorno a la vista index.blade.php
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/delete.png?raw=true)
 
-Add.blade.php
+#### Add.blade.php
 Vista que provee un mensaje de alerta al diligenciar el formulario y agregar un estudiante, con su respectivo retorno a la vista index.blade.php
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/add.png?raw=true)
 
 ## 13. MODELO RELACIONAL BD DEL SISTEMA
 
 La base de datos para este sistema, como ya se informó se llama academia2 y el modelo es el siguiente:
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/diagrama.png?raw=true)
 
 
@@ -370,17 +423,24 @@ Anexo-Vista de impresión - phpMyAdmin 5.1.1.pdf
 ## 15. CLASES, LIBRERÍAS Y MÉTODOS UTILIZADOS
 
 #### 15.1. Clases utilizadas
+
 Para el proyecto Lesan Academy no se usaron clases especiales, salvo las que trae por default el framework.
 
 #### 15.2. Métodos utilizados:
+
 Para este proyecto en la mayoría de controladores se utilizaron los siguientes métodos:
+
 ● Método index: Que lanza un listado de todos los registros de la tabla que se está
 trabajando.
+
 ● Método create: Que permite crear nuevos registros, en este caso por medio de
 formularios.
+
 ● Método store: Método que recibe todos los datos de los campos que vengan desde
 create y los almacena en la base de datos.
+
 ● Método show: Que permite visualizar la información ingresada en la base de datos.
+
 ● Método update: El cual sirve para actualizar la información suministrada en los
 formularios.
 
