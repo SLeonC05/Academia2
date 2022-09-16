@@ -344,6 +344,7 @@ El modelo respectivo se llama País
 
 Esta migración es referente al modelo Departamento, la cual contiene toda la información para la tabla
 departamentos, para la cual se han definido los siguientes campos y tipos de datos:
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/campo6.png?raw=true)
 
 El modelo respectivo se llama Departamento
