@@ -47,7 +47,7 @@ Se necesita un paquete o herramienta que contenga php, MySQL y una interfaz
 que facilite trabajar visualmente la base de datos, en este caso se recomienda Xampp, pero usted puede usar cualquier otra. Para trabajar con la última versión de laravel se debe verificar que php está instalado en el equipo en su versión 8.x. La manera de descargar composer es por el link https://getcomposer.org/download/ y se da clic en `composer-setup.exe.`
 
 #### 5.2.Visual Studio Code
-
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/visual%20studio.png?raw=true)
 Se optó por esta herramienta por su versatilidad, facilidad de uso, y aspecto
 moderno. Permite el uso de gran cantidad de extensiones, su aprendizaje es rápido, la
 integración con GitHub es intuitiva y, sin lugar a dudas, es uno de los editores más
@@ -82,12 +82,12 @@ Una poderosa herramienta para trabajar con lenguaje PHP, resalta errores típico
 sugerencias de código, entre otras funcionalidades
 
 #### 5.3. Framework Laravel
-
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/laravel.png?raw=true)
 Laravel es uno de los frameworks de código abierto más fáciles de asimilar para PHP. Es
 simple, muy potente y tiene una interfaz elegante y divertida de usar. Se usó la versión 4.2. El link de descarga es: https://laravel.com/docs/4.2
 
 #### 5.4. GitHub
-
+![image](https://user-images.githubusercontent.com/99735915/190681607-6a9837b2-ad4b-465c-83db-d2c8ed8fed40.png)
 En este repositorio online se realizó el trabajo colaborativo con los desarrolladores para
 realizar las respectivas modificaciones al aplicativo
 
@@ -337,7 +337,6 @@ Vista que provee un mensaje de alerta al diligenciar el formulario y agregar un 
 ## 13. MODELO RELACIONAL BD DEL SISTEMA
 
 La base de datos para este sistema, como ya se informó se llama academia2 y el modelo es el siguiente:
-![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/diagrama.png?raw=true)
 
 
 ## 14. DICCIONARIO DE DATOS
