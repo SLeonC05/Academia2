@@ -107,8 +107,11 @@ Para el correcto desarrollo del proyecto se usaron 2 Computadores con las siguie
 características:
 
 RAM: 64,0 GB
+
 Disco Duro: 1 TB
+
 Procesador: Intel(R) Xeon(R) W-10855M CPU @ 2.80GHz 2.81 GHz
+
 Pantalla: Estándar
 
 Este aplicativo solo ha sido probado y visualizado en el terminal local localhost:8000, no se ha subido a ningún servidor hasta el momento.
@@ -118,13 +121,21 @@ Este aplicativo solo ha sido probado y visualizado en el terminal local localhos
 La página web con todas sus funcionalidades, se podrá acceder desde cualquier computador que tenga mínimo estas características:
 
 Procesador: 1 GHz o más rápido o sistema en un chip (SoC)
+
 RAM: 1 GB para 32 bits o 2 GB para 64 bits
+
 Disco duro: 16 GB para un SO de 32 bits o 32 GB para un SO de 64 bits
+
 Se ha probado que el sistema funciona correctamente en los siguientes navegadores:
+
 ● Google Chrome en su última versión
+
 ● Mozilla Firefox
+
 ● Opera
+
 ● Microsoft Edge
+
 Ancho de banda: 5 Mbps
 
 Es de resaltar que entre más crezca el aplicativo podrían variar estos requisitos para su correcto funcionamiento.
@@ -152,7 +163,9 @@ personales, Academia Lesan Academy, en su calidad de responsable del tratamiento
 informa los lineamientos generales en esta materia:
 
 ● Datos Generales
+
 El responsable del tratamiento de sus datos personales es Academia Colombiana Lesan Academy, identificado con 901210561-1, con sede principal en la Calle 17 #5 – 02 en la ciudad de Pereira, Portal www.lesanacademy.com.
+
 ● Seguridad de la información Academia Lesan Academy está comprometido en efectuar un correcto uso y tratamiento de los datos personales contenidos en sus bases de datos, evitando el acceso no autorizado a terceros que puedan conocer o vulnerar, modificar, divulgar y/o destruir la información que allí reposa.
 
 ● Vigencia de la Política de tratamiento de datos personales. La política del tratamiento de datos personales rige a partir del momento en que sea aprobada por la
@@ -166,8 +179,8 @@ Junta Directiva de la Academia..
 
 Dentro de Http se tiene la carpeta Controllers, donde a su vez se tinene los siguientes
 controladores que son de recursos:
-CursoController.php: Se encarga de manejar toda la lógica para la tabla Curso del sistema,
-donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista. DocenteController.php: Se encarga de manejar toda la lógica para la tabla Docente del sistema, donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista. EstudianteController.php: Se encarga de manejar toda la lógica para la tabla Estudiante delsistema, donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista..
+
+CursoController.php: Se encarga de manejar toda la lógica para la tabla Curso del sistema, donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista. DocenteController.php: Se encarga de manejar toda la lógica para la tabla Docente del sistema, donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista. EstudianteController.php: Se encarga de manejar toda la lógica para la tabla Estudiante delsistema, donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista..
 
 #### 10.1.2. Migraciones:
 En el proyecto se pueden apreciar las siguientes migraciones, dentro de
@@ -176,20 +189,25 @@ la ruta database/Migrations:
 ##### create_cursos_table: 
 Esta migración se refiere a la tabla cursos, donde se describen los
 campos tales como: nombre, descripción y duración.
+
 ##### create_docentes_table: 
 Esta migración se refiere a la tabla cursos, donde se describen los campos tales como: nombres, apellidos, título, edad, fecha, imagen y documento.
+
 ##### create_materias_table: 
 Esta migración se refiere a la tabla cursos, donde se describen los campos tales como: nombreMateria, intensidad.
+
 ##### create_paises_table: 
-Esta migración se refiere a la tabla cursos, donde se describen los
-campos tales como: nombre pais.
+Esta migración se refiere a la tabla cursos, donde se describen los campos tales como: nombre pais.
+
 ##### create_departamentos_table: 
-Esta migración se refiere a la tabla cursos, donde se describen
-los campos tales como: nombreDepa y idPais 
+Esta migración se refiere a la tabla cursos, donde se describen los campos tales como: nombreDepa y idPais.
+
 ##### create_municipios_table: 
-Esta migración se refiere a la tabla cursos, donde se describen los campos tales como: nombreMunici y idDep
+Esta migración se refiere a la tabla cursos, donde se describen los campos tales como: nombreMunici y idDep.
+
 ##### create_cursos_materias_table: 
-Esta migración se refiere a la tabla cursos, donde se describen los campos tales como: idCurso y idMateria
+Esta migración se refiere a la tabla cursos, donde se describen los campos tales como: idCurso y idMateria.
+
 ##### create_estudiantes_table: 
 Esta migración se refiere a la tabla cursos, donde se describen los campos tales como: tipoDoc numDoc, docIdent, fechaExp, idMuniExp, nombres, primerApellido, segundoApellido, genero, idMuni, idCurso y estrato. Dentro de esta tabla no se encuentran como llaves foráneas los países y departamentos ya que por requerimientos del cliente se optó por relacionarlos directamente al municipio que se escoja en el formulario.
 
@@ -198,34 +216,43 @@ Esta migración se refiere a la tabla cursos, donde se describen los campos tale
 Dentro del archivo web.php que está en routers, se encuentran las rutas principales del proyecto
 como:
 ‘/’: esta ruta provee acceso a la página principal del Proyecto Academia.
-‘/cursos/nosotros’: esta ruta provee acceso a un espacio en la parte superior derecha llamada
+
+‘/cursos/nosotros’: esta ruta provee acceso a un espacio en la parte superior derecha llamada.
+
 ‘nosotros’ la cual facilita la visualización de información de la academia.
+
 ‘/cursos’: esta ruta provee acceso a el controlador de cursos, el cual contiene las rutas de las
 diferentes vistas.
+
 ‘/docentes’: esta ruta provee acceso a el controlador de docentes, el cual contiene las rutas de las
 diferentes vistas.
+
 ‘/estudiantes’: esta ruta provee acceso a el controlador de estudiantes, el cual contiene las rutas
 de las diferentes vistas.
 
 ## 11. CONFIGURACIÓN DE LA BASE DE DATOS
 
 Para el caso particular se usó MySQL y, específicamente, PhpMyadmin, herramienta contenida
-en Xampp.
-Para poder trabajar en producción con la base de datos, se deben habilitar los servicios de Apache
-y MySQL, dando clic en los botones start del control panel
+en Xampp. Para poder trabajar en producción con la base de datos, se deben habilitar los servicios de Apache
+y MySQL, dando clic en los botones start del control panel. Si algún puerto está ocupado, se hace el respectivo cambio usando el botón Admin.
 
-Si algún puerto está ocupado, se hace el respectivo cambio usando el botón Admin.
 Los datos de acceso a la base de datos son:
+
 Host: 127.0.0.1
+
 Usuario: root
+
 Clave: Sin clave
+
 Nombre de la BD: academia2
+
 Para la correcto configuración del proyecto Laravel y su conexión con la base de datos se agrega
 la información respectiva en el archivo .env
 
 A través del siguiente panel se pueden hacer configuraciones en la base de datos:
 
 Detalles de los modelos y migraciones Laravel:
+
 1)
 
 Esta migración es referente al modelo Curso, la cual contiene toda la información para la tabla
@@ -279,6 +306,7 @@ El modelo respectivo se llama Departamento
 
 #### Módulo Estudiantes
 Este módulo se ha creado para estudiantes de la academia, cualquier persona puede registrarse, la información aquí suministrada se guardará en la tabla Estudiantes de la base de datos ya mencionada. Los campos han sido configurados para que en nombres y primer y segundo apellido solo acepten letras. El campo numDoc solo acepta caracteres numerico que no se encuentren ya registrados en la tabla y con un máximo de 10 caracteres. El campo para docIdent solo permite subir archivos en formato PDF, El campo fechaExp fue modificado para no ser un dato nulo, es decir, siempre debe ser diligenciado. Este módulo está conectado con el módulo cursos, ya que el en formulario se debe diligenciar a qué curso está relacionado el estudiante, por esto es necesario que existan cursos almacenados en la tabla cursos para poder ingresar un estudiante.
+
 Al entrar a este módulo desde el navegador se vería así:
 
 La vista (view) en Laravel que permite renderizar esta vista es estudiantes.show.blade. Además, existen otras vistas, dentro de la carpeta estudiantes, relacionadas con este módulo, los cuales permiten realizar el respectivo CRUD, como son:
