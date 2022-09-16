@@ -137,7 +137,9 @@ La educación superior, por su parte, es reglamentada por la Ley 30 de 1992 que 
 ● Decreto 1403 de 1993- Reglamentación de Ley 30 de 1992. Establece que mientras se dictaminan los requisitos para la creación y funcionamiento de los programas académicos de pregrado que puedan ofrecer las instituciones de educación superior, estas deberán presentar al Ministerio de Educación Nacional por conducto del Instituto Colombiano para el Fomento de la Educación Superior (ICFES), con el fin de garantizar el cumplimiento de los fines de la educación, la información referida al correspondiente  programa. Así también regula lo referido a la autorización de la oferta de programas de Maestría, Doctorado y Postdoctorado, de conformidad con la referida Ley. (Dado el 21 de Julio de 1993 y Publicado en el Diario Oficial N° 41.476 del 5 de agosto de 1994.
 
 ● Ley 115 de 1994- Ley General de Educación. Ordena la organización del Sistema Educativo General Colombiano. Esto es, establece normas generales para regular el Servicio Público de la Educación que cumple una función social acorde con las necesidades e intereses de las personas, de la familia y de la sociedad. Respecto a la Educación Superior, señala que ésta es regulada por ley especial, excepto lo dispuesto en la presente Ley. "Excepto en lo dispuesto en la Ley 115 de 1994, sobre Educación Tecnológica que había sido omitida en la Ley 30 de 1992. Ver Artículo 213 de la Ley 115.
+
 ● Decreto 644 de 2001- Reglamentación sobre puntajes altos en Exámenes de Estado.
+
 -Acuerdo No. 01 de Junio 23 de 2005 . Consejo Nacional de Educación Superior, CESU, por elcual se expide el reglamento interno de funcionamiento.
 
 -Acuerdo No. 02 de Junio 23 de 2005. Consejo Nacional de Educación Superior, CESU, por el cual se subroga el Acuerdo 001 de 2000 del Consejo Nacional de Educación Superior, CESU, y con el cual se expide el reglamento, se determina la integración y las funciones del Consejo Nacional de Acreditación.
