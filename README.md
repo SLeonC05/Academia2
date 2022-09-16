@@ -9,20 +9,20 @@ cliente herramientas para desarrollar de manera efectiva sus procesos de inscrip
 estudiantes y docentes, además de proporcionar toda la información necesaria como cursos, materias y datos sobre la academia.
 El presente documento pretende ser un medio de apoyo para aquellos desarrolladores que lleguen a estar implicados en cualquier fase del desarrollo del aplicativo. Lesan Academy incluyendo la fase de mantenimiento y actualización
 
-##2. OBJETIVOS
+## 2. OBJETIVOS
 
 Para el presente manual se ha definido un objetivo general y dos objetivos específicos que se detallan a continuación.
 
-####2.1.Objetivo General
+#### 2.1.Objetivo General
 Proveer información acerca del aplicativo Lesan Academy como herramienta de apoyo a los desarrolladores o personal con conocimiento técnico que, en alguna fase del ciclo de vida del aplicativo, deban cumplir con alguna función respecto a este.
 
-####2.2.Objetivos Específicos
+#### 2.2.Objetivos Específicos
 1. Proporcionar información técnica relevante sobre entornos de desarrollo y
 configuraciones especializadas del aplicativo Lesan Academy
 
 2. Brindar información general sobre el aplicativo para que se conozca su funcionalidad, su forma de uso, clases, modelos y líneas de código importantes.
 
-##3. ALCANCE
+## 3. ALCANCE
 
 Este documento está dirigido a personal de desarrollo con conocimientos técnicos tanto
 de la empresa de desarrollo Senita Ltda, como de la empresa cliente Lesan Academy que tengan algún rol dentro de la programación, mantenimiento y actualización de la aplicación Lesan Academy. No está destinado a usuarios comunes.
