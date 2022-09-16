@@ -83,8 +83,8 @@ sugerencias de código, entre otras funcionalidades
 
 #### 5.3. Framework Laravel
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/laravel.png?raw=true)
-Laravel es uno de los frameworks de código abierto más fáciles de asimilar para PHP. Es
-simple, muy potente y tiene una interfaz elegante y divertida de usar. Se usó la versión 4.2. El link de descarga es: https://laravel.com/docs/4.2
+
+Laravel es uno de los frameworks de código abierto más fáciles de asimilar para PHP. Es simple, muy potente y tiene una interfaz elegante y divertida de usar. Se usó la versión 4.2. El link de descarga es: https://laravel.com/docs/4.2
 
 #### 5.4. GitHub
 ![image](https://user-images.githubusercontent.com/99735915/190681607-6a9837b2-ad4b-465c-83db-d2c8ed8fed40.png)
@@ -98,8 +98,11 @@ Para el desarrollo de este proyecto de software se utilizó la metodología en C
 la cual consiste en dividir en fases cada etapa del desarrollo de software y completar cada una de ellas en un orden específico, es decir, no puedes iniciar la “fase 2” hasta que hayas concluido la“fase 1”.De esta forma primero se realizó un análisis y comprobación del funcionamiento de cada una de las fases al concluirlas, antes de pasar a la siguiente, detectando así los posibles errores y corrigiéndolos antes de avanzar.
 
 #### Modelo de metodología en cascada
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/cascada.png?raw=true)
 
 #### Trabajo desde ramas en GitHub
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/ramas.png?raw=true)
+
 
 ## 7. REQUISITOS TÉCNICOS PARA DESARROLLAR EL SISTEMA
 
@@ -177,12 +180,17 @@ Junta Directiva de la Academia..
 
 #### 10.1.1. Controladores de recursos
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/controladores.png?raw=true)
+
 Dentro de Http se tiene la carpeta Controllers, donde a su vez se tinene los siguientes
 controladores que son de recursos:
 
 CursoController.php: Se encarga de manejar toda la lógica para la tabla Curso del sistema, donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista. DocenteController.php: Se encarga de manejar toda la lógica para la tabla Docente del sistema, donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista. EstudianteController.php: Se encarga de manejar toda la lógica para la tabla Estudiante delsistema, donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista..
 
 #### 10.1.2. Migraciones:
+
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/migraciones.png?raw=true)
+
 En el proyecto se pueden apreciar las siguientes migraciones, dentro de
 la ruta database/Migrations:
 
@@ -213,6 +221,8 @@ Esta migración se refiere a la tabla cursos, donde se describen los campos tale
 
 #### 10.1.3. Rutas principales para el proyecto Laravel
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/rutas.png?raw=true)
+
 Dentro del archivo web.php que está en routers, se encuentran las rutas principales del proyecto
 como:
 ‘/’: esta ruta provee acceso a la página principal del Proyecto Academia.
@@ -230,11 +240,15 @@ diferentes vistas.
 ‘/estudiantes’: esta ruta provee acceso a el controlador de estudiantes, el cual contiene las rutas
 de las diferentes vistas.
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/routes.png?raw=true)
+
 ## 11. CONFIGURACIÓN DE LA BASE DE DATOS
 
-Para el caso particular se usó MySQL y, específicamente, PhpMyadmin, herramienta contenida
-en Xampp. Para poder trabajar en producción con la base de datos, se deben habilitar los servicios de Apache
-y MySQL, dando clic en los botones start del control panel. Si algún puerto está ocupado, se hace el respectivo cambio usando el botón Admin.
+Para el caso particular se usó MySQL y, específicamente, PhpMyadmin, herramienta contenida en Xampp. Para poder trabajar en producción con la base de datos, se deben habilitar los servicios de Apache y MySQL, dando clic en los botones start del control panel. 
+
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/xamp.png?raw=true)
+
+Si algún puerto está ocupado, se hace el respectivo cambio usando el botón Admin.
 
 Los datos de acceso a la base de datos son:
 
@@ -249,7 +263,11 @@ Nombre de la BD: academia2
 Para la correcto configuración del proyecto Laravel y su conexión con la base de datos se agrega
 la información respectiva en el archivo .env
 
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/.env.png?raw=true)
+
 A través del siguiente panel se pueden hacer configuraciones en la base de datos:
+
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/bd.png?raw=true)
 
 
 ## Detalles de los modelos y migraciones Laravel:
