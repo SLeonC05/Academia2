@@ -285,7 +285,7 @@ A través del siguiente panel se pueden hacer configuraciones en la base de dato
 Esta migración es referente al modelo Curso, la cual contiene toda la información para la tabla
 curso, para la cual se han definido los siguientes campos y tipos de datos:
 
-![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/curso1.png?raw=true)
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/campos1.png?raw=true)
 
 El modelo respectivo se llama Curso
 
