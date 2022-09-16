@@ -361,7 +361,7 @@ tabla municipios, para la cual se han definido los siguientes campos y tipos de 
 
 El modelo respectivo se llama Municipio
 
-
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/Modelonuevo7.PNG?raw=true)
 
 ## 12. DETALLES TÉCNICOS MÓDULOS DEL SISTEMA
 
