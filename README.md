@@ -187,10 +187,10 @@ Junta Directiva de la Academia..
 
 #### 10.1.1. Controladores de recursos
 
-![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/controladores.png?raw=true)
-
 Dentro de Http se tiene la carpeta Controllers, donde a su vez se tinene los siguientes
 controladores que son de recursos:
+
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/controladores.png?raw=true)
 
 CursoController.php: Se encarga de manejar toda la lógica para la tabla Curso del sistema, donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista. DocenteController.php: Se encarga de manejar toda la lógica para la tabla Docente del sistema, donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista. EstudianteController.php: Se encarga de manejar toda la lógica para la tabla Estudiante delsistema, donde se programan las rutas y conexiones de las acciones de create, store, show, edit, update y destroy lo cual proporciona la lógica de toda la vista..
 
@@ -288,6 +288,7 @@ curso, para la cual se han definido los siguientes campos y tipos de datos:
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/curso1.png?raw=true)
 
 El modelo respectivo se llama Curso
+
 ![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/curso1.png?raw=true)
 
 2)
