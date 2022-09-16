@@ -47,7 +47,7 @@ Se necesita un paquete o herramienta que contenga php, MySQL y una interfaz
 que facilite trabajar visualmente la base de datos, en este caso se recomienda Xampp, pero usted puede usar cualquier otra. Para trabajar con la última versión de laravel se debe verificar que php está instalado en el equipo en su versión 8.x. La manera de descargar composer es por el link https://getcomposer.org/download/ y se da clic en `composer-setup.exe.`
 
 #### 5.2.Visual Studio Code
-![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/visual%20studio.png?raw=true)
+
 Se optó por esta herramienta por su versatilidad, facilidad de uso, y aspecto
 moderno. Permite el uso de gran cantidad de extensiones, su aprendizaje es rápido, la
 integración con GitHub es intuitiva y, sin lugar a dudas, es uno de los editores más
@@ -337,6 +337,7 @@ Vista que provee un mensaje de alerta al diligenciar el formulario y agregar un 
 ## 13. MODELO RELACIONAL BD DEL SISTEMA
 
 La base de datos para este sistema, como ya se informó se llama academia2 y el modelo es el siguiente:
+![](https://github.com/SLeonC05/Academia2/blob/master/imagenes-git/diagrama.png?raw=true)
 
 
 ## 14. DICCIONARIO DE DATOS
