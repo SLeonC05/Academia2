@@ -25,7 +25,7 @@ class storeEstudianteRequest extends FormRequest
     {
         return [
 
-            'numDoc'=>'required|unique:estudiantes|integer|in:1, 10',
+            'numDoc'=>'required|unique:estudiantes|integer',
             'docIdent'=>'required|mimes:pdf',
             'fechaExp'=>'required:nullable|date',
             'nombres'=>'required|max: 50',
