@@ -25,8 +25,8 @@ class storeCursoRequest extends FormRequest
     {
         return [
              //implementamos validaciones
-            'nombre'=>'required|max: 30',
-            'descripcion'=>'required|max: 60',
+            'nombre'=>'required|unique:cursos|max: 30',
+            'descripcion'=>'required|unique:cursos|max: 60',
             'duracion'=>'required|integer',
             'imagen'=>'required|image'
         ];

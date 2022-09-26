@@ -25,8 +25,8 @@ class storeDocenteRequest extends FormRequest
     {
         return [
             //implementamos validaciones
-            'nombres'=>'required|max: 25',
-            'apellidos'=>'required|max: 40',
+            'nombres'=>'required|unique:docentes|max: 25',
+            'apellidos'=>'required|unique:docentes|max: 40',
             'titulo'=>'required|max:50',
             'edad'=>'required|integer',
             'fecha'=>'required|date',

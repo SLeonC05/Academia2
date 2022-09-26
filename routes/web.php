@@ -33,3 +33,7 @@ Route::resource('estudiantes', EstudianteController::class);
 Route::get('locale/{locale}', function($locale){
     App::setLocale($locale);
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
