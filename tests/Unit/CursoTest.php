@@ -35,6 +35,18 @@ class CursoTest extends TestCase
 
         $this->assertTrue($cursito1->nombre && $cursito1->descripcion != $cursito2->nombre && $cursito2->descripcion);
     }
+    public function test_delete_curso()
+    {
+         $cursito = Curso::factory()->count(1)->make();
+
+          $cursito = Curso::first();
+
+        if($cursito){
+            $cursito->delete();
+         }
+
+       $this->assertTrue(True);
+    }
 
     public function test_guarda_nuevo_curso()
     {

@@ -35,18 +35,18 @@ class DocenteTest extends TestCase
         $this->assertTrue($docentico1->nombres && $docentico1->apellidos != $docentico2->nombres && $docentico2->apellidos);
     }
 
-    // public function test_delete_docente()
-    // {
-    //     $docentico = Docente::factory()->count(1)->make();
+    public function test_delete_docente()
+    {
+         $docentico = Docente::factory()->count(1)->make();
 
-    //     $docentico = Docente::first();
+          $docentico = Docente::first();
 
-    //     if($docentico){
-    //         $docentico->delete();
-    //     }
+        if($docentico){
+            $docentico->delete();
+         }
 
-    //     $this->assertTrue(True);
-    // }
+       $this->assertTrue(True);
+    }
 
     public function test_guarda_nuevo_docente()
     {

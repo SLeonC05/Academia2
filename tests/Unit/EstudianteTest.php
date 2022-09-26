@@ -32,6 +32,18 @@ class EstudianteTest extends TestCase
 
         $this->assertTrue($estudiantico1->numDoc != $estudiantico2->numDoc);
     }
+    public function test_delete_estudiante()
+    {
+         $estudiantico = Estudiante::factory()->count(1)->make();
+
+          $estudiantico = Estudiante::first();
+
+        if($estudiantico){
+            $estudiantico->delete();
+         }
+
+       $this->assertTrue(True);
+    }
 
     public function test_guarda_nuevo_estudiante()
     {
