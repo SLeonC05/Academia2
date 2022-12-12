@@ -8,7 +8,7 @@
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
-            <a class="navbar-brand" href='/cursos'>
+            <a class="navbar-brand" href='/'>
                 <img src={{ asset('logo.png') }} alt="" height="80" width="80">
             </a>
             <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +17,7 @@
             <div id="my-nav" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/cursos/create">Crear Curso <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/cursos">Cursos<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="/docentes">Docentes <span class="sr-only">(current)</span></a>

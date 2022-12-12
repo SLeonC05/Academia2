@@ -5,8 +5,7 @@
 @section('contenido')
 
     <h2>Listado de Cursos</h2>
-
-    {{--Foreach sirve para iterar arrays. Es decir permite ciclos en listas--}}
+    <a href="/cursos/create" class="m-3 btn btn-success">Añadir curso nuevo</a>
     <div class="row">
         @foreach ($cursito as $item)
                 <div class="col-sm m-3">
